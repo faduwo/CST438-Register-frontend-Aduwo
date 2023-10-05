@@ -5,10 +5,15 @@ import {SERVER_URL} from '../constants';
 
 const AdminHome = ()  => {
 
-    useEffect(() => {
-        // called once after intial render
-        fetchStudents();
-        }, [] )
+  // function const fl = () => { fetchStudents(); }
+  // if you give it an empty list it will call the function one time
+
+  useEffect(fetchStudents(), [] );
+
+    // useEffect(() => {
+    //     // called once after intial render
+    //     fetchStudents();
+    //     }, [] )
 
     /* 
         *  list of students 
