@@ -8,12 +8,12 @@ const AdminHome = ()  => {
   // function const fl = () => { fetchStudents(); }
   // if you give it an empty list it will call the function one time
 
-  useEffect(fetchStudents(), [] );
+  //useEffect(fetchStudents(), [] );
 
-    // useEffect(() => {
-    //     // called once after intial render
-    //     fetchStudents();
-    //     }, [] )
+    useEffect(() => {
+        // called once after intial render
+        fetchStudents();
+        }, [] )
 
     /* 
         *  list of students 
